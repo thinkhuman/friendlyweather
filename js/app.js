@@ -33,7 +33,7 @@ var icons = {	"clear-day" : "B",
 			// Register for an API key at: https://api.forecast.io/
 			// And replace it in the string below
 			// Without it the app will not work
-			var forecastURL = "https://api.forecast.io/forecast/f691bce447926259b0fd085a30c330c7/"+latlng;
+			var forecastURL = "https://api.forecast.io/forecast/[YOUR API KEY]"+latlng;
 
 			$.ajax({
 			    url: forecastURL,
