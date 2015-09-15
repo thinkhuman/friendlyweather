@@ -1,4 +1,4 @@
 # friendlyweather
 A mobile web app that displays essential weather info for your location and several popular cities.
 
-Built with jQuery Mobile, CSS, HTML, JavaScript, and care.
+Uses jQuery Mobile, CSS, HTML and JavaScript to consume and display data from the [forecast.io](https://api.forecast.io/) API.
