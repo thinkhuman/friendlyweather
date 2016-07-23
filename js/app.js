@@ -33,7 +33,7 @@ var icons = {	"clear-day" : "B",
 			// Register for an API key at: https://api.forecast.io/
 			// And replace it in the string below
 			// Without it the app will not work
-			var forecastURL = "https://api.forecast.io/forecast/[YOUR API KEY]"+latlng;
+			var forecastURL = "https://api.forecast.io/forecast/f691bce447926259b0fd085a30c330c7/"+latlng;
 
 			$.ajax({
 			    url: forecastURL,
@@ -47,7 +47,7 @@ var icons = {	"clear-day" : "B",
 			       $("#current_temp").attr("data-icon",icons[json.currently.icon]);
 			       $("#humidity").html("Humidity: " + (Math.round(json.currently.humidity * 100))+"%");
                    $("#chance_rain").html("Chance of Rain: " + Math.round(json.currently.precipProbability)+"%");
-
+                   $("#max_temp").html("High: " + json.daily.temperatureMin+"&#176;");
 			    },
 			    error: function(e) {
 			       console.log(e.message);
